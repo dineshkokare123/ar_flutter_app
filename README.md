@@ -1,14 +1,6 @@
 # ar_flutter_app
 AR Flutter App: AR Size Estimator App
-One−sentencetagline,e.g.,"Across−platformAugmentedRealityapplicationbuiltwithFlutter 
-′
- s‘ar 
-f
-​	
- lutter 
-p
-​	
- lugin‘."
+
 📝 Overview
 This repository contains the source code for the [Your App Name] mobile application, developed using Flutter. This project utilizes the power of Augmented Reality (AR) to overlay digital content onto the real world using the device's camera.
 
