@@ -37,10 +37,9 @@ Android Studio or VS Code with Flutter/Dart plugins.
 
 A Physical Android Device supporting ARCore, or an iOS Device supporting ARKit (AR cannot be tested on standard emulators/simulators).
 
-Steps
+Steps:
 
 Clone the Repository:
-
 Bash
 git clone https://github.com/dineshkokare123/ar_flutter_app
 cd ar_flutter_app
