@@ -1,40 +1,73 @@
 # ar_flutter_app
-. Prerequisites: ARCore Compatibility 📱
-Your phone must support Google ARCore for the AR features to work.
+AR Flutter App: AR Size Estimator App
+One−sentencetagline,e.g.,"Across−platformAugmentedRealityapplicationbuiltwithFlutter 
+′
+ s‘ar 
+f
+​	
+ lutter 
+p
+​	
+ lugin‘."
+📝 Overview
+This repository contains the source code for the [Your App Name] mobile application, developed using Flutter. This project utilizes the power of Augmented Reality (AR) to overlay digital content onto the real world using the device's camera.
 
-Check Compatibility: Ensure your physical Android device is on the official list of ARCore supported devices.
+The primary goal of this application is to [Describe your app's main purpose, e.g., "allow users to visualize 3D furniture models in their living space before purchase," or "provide an interactive educational experience by placing astronomical models"].
 
-Android OS: The device must be running Android 7.0 (Nougat) or later.
+✨ Features
+Platform Support: Fully cross-platform compatibility for both Android (ARCore) and iOS (ARKit).
 
-Required App: The device must have the Google Play Services for AR app installed (it usually installs automatically when an AR app is launched for the first time).
+Plane Detection: Automatically detects and tracks horizontal and vertical surfaces in the real environment.
 
-2. Prepare the Device for Debugging
-You likely did this to get the app running, but it's crucial for reliable testing:
+3D Object Placement: Enables users to place and anchor [Specify your object type, e.g., "custom 3D assets" or "primitive shapes"] onto detected surfaces via touch interaction.
 
-Enable Developer Options: Go to Settings → About phone and tap Build number seven times.
+Object Manipulation: Supports interactive scaling, rotation, and translation of placed AR objects.
 
-Enable USB Debugging: Go to Settings → System → Developer options and turn on USB debugging.
+Real-time Rendering: Uses the high-performance Impeller rendering backend (Flutter) for smooth AR visualization.
 
-Connect Device: Connect your phone to your computer via USB cable.
+🛠️ Technologies & Dependencies
+This project is built using the Flutter framework and relies on several key packages for its AR functionality and core services:
 
-3. Run the App in Debug Mode
-This step pushes the latest compiled code (which includes all the dependency fixes) directly to your device.
+Technology	Purpose
+Flutter	Cross-platform mobile application framework.
+Dart	Programming Language.
+ar_flutter_plugin	Core package for bridging Flutter with native ARCore/ARKit APIs.
+permission_handler	Handles required camera, storage, and location permissions reliably.
+vector_math	Essential package for matrix and vector calculations needed for 3D graphics.
+⚙️ Setup & Installation
+To run this project locally, ensure you have the Flutter SDK installed and configured.
 
-Verify Device: In your terminal, run flutter devices. You should see your Android device listed, not just an emulator.
+Prerequisites
 
-Launch the App: Run the following command from your project's root directory:
+Flutter SDK (v3.19.x or newer recommended)
+
+Android Studio or VS Code with Flutter/Dart plugins.
+
+A Physical Android Device supporting ARCore, or an iOS Device supporting ARKit (AR cannot be tested on standard emulators/simulators).
+
+Steps
+
+Clone the Repository:
 
 Bash
+git clone [Your Repository URL]
+cd ar_flutter_app
+Install Dependencies:
+
+Bash
+flutter pub get
+Clean & Run (Android): A clean build is recommended, especially after resolving native dependency conflicts.
+
+Bash
+flutter clean
 flutter run
-This command builds the app, installs it, and launches it on your connected device. The terminal will remain connected, allowing you to view live logs and debug messages critical for identifying AR errors.
+(Note: Ensure your ARCore-compatible device is connected and selected before running.)
 
-4. Functional AR Testing (The User Experience)
-Once the app launches on the device, follow these steps to confirm AR functionality:
+💡 Troubleshooting (For Future Developers)
+During development, we encountered and resolved persistent native dependency conflicts related to the permission_handler and ar_flutter_plugin. The solution involves using dependency_overrides in pubspec.yaml to force modern package versions compatible with Flutter's v2 embedding API. If you encounter errors like cannot find symbol Registrar, verify the dependency_overrides section is active and correct.
 
-A. Permission Check
-
-The app will prompt you for Camera permission (and possibly storage/location). You must accept these permissions. If the app crashes immediately, it usually means a permission was denied or a manifest issue remains (though your logs suggest you passed the build phase).
-
+🤝 Contribution
+Feel free to fork this repository, submit issues, or contribute pull requests!
 B. Surface Detection
 
 The screen should show a live camera view.
