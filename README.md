@@ -42,7 +42,7 @@ Steps
 Clone the Repository:
 
 Bash
-git clone [Your Repository URL]
+git clone https://github.com/dineshkokare123/ar_flutter_app
 cd ar_flutter_app
 Install Dependencies:
 
