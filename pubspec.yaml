@@ -32,6 +32,8 @@ dependencies:
     sdk: flutter
   ar_flutter_plugin: ^0.7.0
   vector_math: ^2.2.0
+  # NOTE: The version below is now overridden by the section at the bottom.
+  permission_handler: ^10.4.5
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -50,6 +52,14 @@ dev_dependencies:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
+
+# -------------------------------------------------------------
+# 👇 FINAL FIX: Dependency Overrides (MUST be at the root level)
+# -------------------------------------------------------------
+dependency_overrides:
+  # Force these packages to use a modern version compatible with Flutter v2 embedding.
+  permission_handler: ^12.0.1
+  permission_handler_android: ^12.0.1
 
 # The following section is specific to Flutter packages.
 flutter:
