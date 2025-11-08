@@ -76,3 +76,8 @@ If your code is correct, a 3D object (cube, sphere, etc.) should appear anchored
 Move the phone around the object: The object should remain fixed in its real-world position and perspective.
 
 If you can successfully place an object and it stays locked in 3D space as you move the camera, your AR application is working correctly!
+
+Screen Recording:
+
+https://github.com/user-attachments/assets/12029251-c55d-4793-ab09-98bf217c08fe
+
